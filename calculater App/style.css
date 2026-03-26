@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1d2671, #c33764);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+form input {
+    border: none;
+    outline: none;
+    width: 80px;
+    height: 60px;
+    margin: 8px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    transition: 0.2s;
+}
+
+form input:hover {
+    background: #555;
+}
+
+.display {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.display input {
+    width: 100%;
+    height: 70px;
+    text-align: right;
+    font-size: 28px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #111;
+    color: rgb(250, 252, 250);
+}
+
+/* Operators styling */
+input[value="/"],
+input[value="X"],
+input[value="-"],
+input[value="+"],
+input[value="="] {
+    background: #ff9500;
+    color: #fff;
+}
+
+input[value="/"]:hover,
+input[value="X"]:hover,
+input[value="-"]:hover,
+input[value="+"]:hover,
+input[value="="]:hover {
+    background: #e08900;
+}
+
+/* Special buttons */
+input[value="AC"] {
+    background: #ff3b30;
+}
+
+input[value="DE"] {
+    background: #ffcc00;
+    color: #000;
+}
+
+input[value="AC"]:hover {
+    background: #d63028;
+}
+
+input[value="DE"]:hover {
+    background: #e6b800;
+}
